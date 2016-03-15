@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aminzai.net/"/>
-  <updated>2016-03-15T15:37:21.000Z</updated>
+  <updated>2016-03-15T15:42:11.000Z</updated>
   <id>http://aminzai.net/</id>
   
   <author>
@@ -20,13 +20,13 @@
     <link href="http://aminzai.net/2016/03/15/Docker-with-kpartx/"/>
     <id>http://aminzai.net/2016/03/15/Docker-with-kpartx/</id>
     <published>2016-03-15T15:29:05.000Z</published>
-    <updated>2016-03-15T15:37:21.000Z</updated>
+    <updated>2016-03-15T15:42:11.000Z</updated>
     
-    <content type="html">&lt;p&gt;前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。&lt;br&gt;Google找了一下，後來在Openstack的git log發現一個小(patch)[&lt;a href=&quot;https://review.openstack.org/gitweb?p=openstack%2Fdiskimage-builder.git;a=commitdiff;h=55f61ca26213dbca4208b5bbdaa2031dbdd7b73c]，跟我目前要解決的問題一樣，所以就拿來解了一下，還真的有用，所以就在此紀錄一下。&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://review.openstack.org/gitweb?p=openstack%2Fdiskimage-builder.git;a=commitdiff;h=55f61ca26213dbca4208b5bbdaa2031dbdd7b73c]，跟我目前要解決的問題一樣，所以就拿來解了一下，還真的有用，所以就在此紀錄一下。&lt;/a&gt;&lt;/p&gt;&lt;p&gt;在使用kpartx的script加入一個判斷&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# If running inside Docker, make our nodes manually, because udev will not be working.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; [[ &lt;span class=&quot;_&quot;&gt;-f&lt;/span&gt; /.dockerenv ]]; &lt;span class=&quot;keyword&quot;&gt;then&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    sudo dmsetup --noudevsync mknodes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;fi&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;在啟動docker的時候加入&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;--privileged=&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;或使用docker-compose時在docker-compose.yml加入&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;privileged: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;</content>
+    <content type="html">&lt;p&gt;前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。&lt;br&gt;Google找了一下，後來在Openstack的git log發現一個小&lt;a href=&quot;https://review.openstack.org/gitweb?p=openstack%2Fdiskimage-builder.git;a=commitdiff;h=55f61ca26213dbca4208b5bbdaa2031dbdd7b73c&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;patch&lt;/a&gt;，跟我目前要解決的問題一樣，所以就拿來解了一下，還真的有用，所以就在此紀錄一下。&lt;/p&gt;&lt;p&gt;在使用kpartx的script加入一個判斷&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# If running inside Docker, make our nodes manually, because udev will not be working.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; [[ &lt;span class=&quot;_&quot;&gt;-f&lt;/span&gt; /.dockerenv ]]; &lt;span class=&quot;keyword&quot;&gt;then&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    sudo dmsetup --noudevsync mknodes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;fi&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;在啟動docker的時候加入&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;--privileged=&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;或使用docker-compose時在docker-compose.yml加入&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;privileged: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;</content>
     
     <summary type="html">
     
-      &lt;p&gt;前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。&lt;br&gt;Google找了一下，後來在Openstack的git log發現一個小(patch)[&lt;a href=&quot;https:/
+      &lt;p&gt;前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。&lt;br&gt;Google找了一下，後來在Openstack的git log發現一個小&lt;a href=&quot;https://review.
     
     </summary>
     
@@ -55,9 +55,9 @@
     </summary>
     
     
-      <category term="openbox" scheme="http://aminzai.net/tags/openbox/"/>
-    
       <category term="jabra" scheme="http://aminzai.net/tags/jabra/"/>
+    
+      <category term="openbox" scheme="http://aminzai.net/tags/openbox/"/>
     
       <category term="bluetooth" scheme="http://aminzai.net/tags/bluetooth/"/>
     
@@ -281,11 +281,11 @@
     </summary>
     
     
+      <category term="openbox" scheme="http://aminzai.net/tags/openbox/"/>
+    
       <category term="Mediatek" scheme="http://aminzai.net/tags/Mediatek/"/>
     
       <category term="linkit7688duo" scheme="http://aminzai.net/tags/linkit7688duo/"/>
-    
-      <category term="openbox" scheme="http://aminzai.net/tags/openbox/"/>
     
   </entry>
   

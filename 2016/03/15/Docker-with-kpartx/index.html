@@ -5,16 +5,16 @@
   
   <title>Docker with kpartx | 民</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。Google找了一下，後來在Openstack的git log發現一個小(patch)[https://review.openstack.org/gitweb?p=openstack%2Fdiskimage-builder.git;a=commitdif">
+  <meta name="description" content="前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。Google找了一下，後來在Openstack的git log發現一個小patch，跟我目前要解決的問題一樣，所以就拿來解了一下，還真的有用，所以就在此紀錄一下。在使用kpartx的script加入一個判斷1234# If running inside">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Docker with kpartx">
 <meta property="og:url" content="http://aminzai.net/2016/03/15/Docker-with-kpartx/index.html">
 <meta property="og:site_name" content="民">
-<meta property="og:description" content="前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。Google找了一下，後來在Openstack的git log發現一個小(patch)[https://review.openstack.org/gitweb?p=openstack%2Fdiskimage-builder.git;a=commitdif">
-<meta property="og:updated_time" content="2016-03-15T15:37:21.000Z">
+<meta property="og:description" content="前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。Google找了一下，後來在Openstack的git log發現一個小patch，跟我目前要解決的問題一樣，所以就拿來解了一下，還真的有用，所以就在此紀錄一下。在使用kpartx的script加入一個判斷1234# If running inside">
+<meta property="og:updated_time" content="2016-03-15T15:42:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker with kpartx">
-<meta name="twitter:description" content="前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。Google找了一下，後來在Openstack的git log發現一個小(patch)[https://review.openstack.org/gitweb?p=openstack%2Fdiskimage-builder.git;a=commitdif">
+<meta name="twitter:description" content="前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。Google找了一下，後來在Openstack的git log發現一個小patch，跟我目前要解決的問題一樣，所以就拿來解了一下，還真的有用，所以就在此紀錄一下。在使用kpartx的script加入一個判斷1234# If running inside">
 <meta name="twitter:creator" content="@lagunwang">
 <link rel="publisher" href="lagunawang@gmail.com">
 <meta property="fb:app_id" content="KMWang">
@@ -105,11 +105,11 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。<br>Google找了一下，後來在Openstack的git log發現一個小(patch)[<a href="https://review.openstack.org/gitweb?p=openstack%2Fdiskimage-builder.git;a=commitdiff;h=55f61ca26213dbca4208b5bbdaa2031dbdd7b73c]，跟我目前要解決的問題一樣，所以就拿來解了一下，還真的有用，所以就在此紀錄一下。" target="_blank" rel="external">https://review.openstack.org/gitweb?p=openstack%2Fdiskimage-builder.git;a=commitdiff;h=55f61ca26213dbca4208b5bbdaa2031dbdd7b73c]，跟我目前要解決的問題一樣，所以就拿來解了一下，還真的有用，所以就在此紀錄一下。</a></p><p>在使用kpartx的script加入一個判斷<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># If running inside Docker, make our nodes manually, because udev will not be working.</span></span><br><span class="line"><span class="keyword">if</span> [[ <span class="_">-f</span> /.dockerenv ]]; <span class="keyword">then</span></span><br><span class="line">    sudo dmsetup --noudevsync mknodes</span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure></p><p>在啟動docker的時候加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--privileged=<span class="literal">true</span></span><br></pre></td></tr></table></figure></p><p>或使用docker-compose時在docker-compose.yml加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">privileged: <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
+        <p>前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。<br>Google找了一下，後來在Openstack的git log發現一個小<a href="https://review.openstack.org/gitweb?p=openstack%2Fdiskimage-builder.git;a=commitdiff;h=55f61ca26213dbca4208b5bbdaa2031dbdd7b73c" target="_blank" rel="external">patch</a>，跟我目前要解決的問題一樣，所以就拿來解了一下，還真的有用，所以就在此紀錄一下。</p><p>在使用kpartx的script加入一個判斷<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># If running inside Docker, make our nodes manually, because udev will not be working.</span></span><br><span class="line"><span class="keyword">if</span> [[ <span class="_">-f</span> /.dockerenv ]]; <span class="keyword">then</span></span><br><span class="line">    sudo dmsetup --noudevsync mknodes</span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure></p><p>在啟動docker的時候加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--privileged=<span class="literal">true</span></span><br></pre></td></tr></table></figure></p><p>或使用docker-compose時在docker-compose.yml加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">privileged: <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://aminzai.net/2016/03/15/Docker-with-kpartx/" data-id="ciltl2u7u000i0439vqfllu2a" class="article-share-link">Share</a>
+      <a data-url="http://aminzai.net/2016/03/15/Docker-with-kpartx/" data-id="ciltkqups0000c939pjuau7i7" class="article-share-link">Share</a>
       
         <a href="http://aminzai.net/2016/03/15/Docker-with-kpartx/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -160,7 +160,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">12</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li></ul>
     </div>
   </div>
 
