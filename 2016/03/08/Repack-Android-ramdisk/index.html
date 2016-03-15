@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Repack Android ramdisk | 民</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Unpack:1#cat ramdisk.img | gzip -d | cpio -iPack:1#find . | cpio -o -H newc | gzip &amp;gt; ramdisk.img">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Repack Android ramdisk">
+<meta property="og:url" content="http://aminzai.net/2016/03/08/Repack-Android-ramdisk/index.html">
+<meta property="og:site_name" content="民">
+<meta property="og:description" content="Unpack:1#cat ramdisk.img | gzip -d | cpio -iPack:1#find . | cpio -o -H newc | gzip &amp;gt; ramdisk.img">
+<meta property="og:updated_time" content="2016-03-08T15:21:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Repack Android ramdisk">
+<meta name="twitter:description" content="Unpack:1#cat ramdisk.img | gzip -d | cpio -iPack:1#find . | cpio -o -H newc | gzip &amp;gt; ramdisk.img">
+<meta name="twitter:creator" content="@lagunwang">
+<link rel="publisher" href="lagunawang@gmail.com">
+<meta property="fb:app_id" content="KMWang">
+  
+    <link rel="alternate" href="/atom.xml" title="民" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-74933518-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">民</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Amin&#39;s notes</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://aminzai.net"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Repack-Android-ramdisk" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/08/Repack-Android-ramdisk/" class="article-date">
+  <time datetime="2016-03-08T15:00:05.000Z" itemprop="datePublished">2016-03-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Repack Android ramdisk
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Unpack:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#cat ramdisk.img | gzip -d | cpio -i</span></span><br></pre></td></tr></table></figure></p><p>Pack:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#find . | cpio -o -H newc | gzip &gt; ramdisk.img</span></span><br></pre></td></tr></table></figure></p>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://aminzai.net/2016/03/08/Repack-Android-ramdisk/" data-id="cill1v6nd0004bi39u2aaoec2" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ramdisk/">ramdisk</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/03/08/SVN-Merge-with-multi-repo/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          SVN Merge with multi repo
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/03/08/Get-MediaTek-Linkit-7688-Duo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Get MediaTek Linkit 7688 Duo</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Mediatek/" style="font-size: 10px;">Mediatek</a> <a href="/tags/android/" style="font-size: 20px;">android</a> <a href="/tags/bluetooth/" style="font-size: 10px;">bluetooth</a> <a href="/tags/commit-log/" style="font-size: 10px;">commit log</a> <a href="/tags/deploy/" style="font-size: 10px;">deploy</a> <a href="/tags/dns/" style="font-size: 10px;">dns</a> <a href="/tags/docker/" style="font-size: 20px;">docker</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jabra/" style="font-size: 10px;">jabra</a> <a href="/tags/jenkins/" style="font-size: 10px;">jenkins</a> <a href="/tags/linkit7688duo/" style="font-size: 10px;">linkit7688duo</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/merge/" style="font-size: 10px;">merge</a> <a href="/tags/ndk/" style="font-size: 10px;">ndk</a> <a href="/tags/openbox/" style="font-size: 20px;">openbox</a> <a href="/tags/password/" style="font-size: 10px;">password</a> <a href="/tags/ramdisk/" style="font-size: 10px;">ramdisk</a> <a href="/tags/robots-txt/" style="font-size: 10px;">robots.txt</a> <a href="/tags/seo/" style="font-size: 10px;">seo</a> <a href="/tags/svn/" style="font-size: 10px;">svn</a> <a href="/tags/swarm/" style="font-size: 10px;">swarm</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/03/14/Jabra-Rox-Wireless-Openbox/">Jabra Rox Wireless Openbox</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/11/add-deploy-to-github-io/">部屬 Hexo 到 github.io</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/11/add-robots-txt-to-hexo/">幫 Hexo 加入 robots.txt</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/10/有趣的Commit-log網站/">有趣的Commit log網站</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/10/docker-change-user-password/">docker change user password</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Amin Wang<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

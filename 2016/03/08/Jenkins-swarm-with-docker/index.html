@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Jenkins swarm with docker | 民</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="因為某些原因所以前一陣子弄了一套Jenkins，不過為了部署方便，光靠原本的Jenkins自己的部署slave的方式實在不是合我用，所以就在想如何跟Docker整合在一起，一方面也是環境單純可以避面Slave Node上有缺套件沒有記錄到，一方面是要部署多台時可以更快更無腦，所以花了一點時間找到了一套Jenkins Plugin叫做 Swarm。Swarm最大特色大概就是可以不用先在Master">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jenkins swarm with docker">
+<meta property="og:url" content="http://aminzai.net/2016/03/08/Jenkins-swarm-with-docker/index.html">
+<meta property="og:site_name" content="民">
+<meta property="og:description" content="因為某些原因所以前一陣子弄了一套Jenkins，不過為了部署方便，光靠原本的Jenkins自己的部署slave的方式實在不是合我用，所以就在想如何跟Docker整合在一起，一方面也是環境單純可以避面Slave Node上有缺套件沒有記錄到，一方面是要部署多台時可以更快更無腦，所以花了一點時間找到了一套Jenkins Plugin叫做 Swarm。Swarm最大特色大概就是可以不用先在Master">
+<meta property="og:updated_time" content="2016-03-08T15:34:58.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jenkins swarm with docker">
+<meta name="twitter:description" content="因為某些原因所以前一陣子弄了一套Jenkins，不過為了部署方便，光靠原本的Jenkins自己的部署slave的方式實在不是合我用，所以就在想如何跟Docker整合在一起，一方面也是環境單純可以避面Slave Node上有缺套件沒有記錄到，一方面是要部署多台時可以更快更無腦，所以花了一點時間找到了一套Jenkins Plugin叫做 Swarm。Swarm最大特色大概就是可以不用先在Master">
+<meta name="twitter:creator" content="@lagunwang">
+<link rel="publisher" href="lagunawang@gmail.com">
+<meta property="fb:app_id" content="KMWang">
+  
+    <link rel="alternate" href="/atom.xml" title="民" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-74933518-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">民</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Amin&#39;s notes</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://aminzai.net"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Jenkins-swarm-with-docker" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/08/Jenkins-swarm-with-docker/" class="article-date">
+  <time datetime="2016-03-08T15:32:43.000Z" itemprop="datePublished">2016-03-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Jenkins swarm with docker
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>因為某些原因所以前一陣子弄了一套Jenkins，不過為了部署方便，光靠原本的Jenkins自己的部署slave的方式實在不是合我用，所以就在想如何跟Docker整合在一起，一方面也是環境單純可以避面Slave Node上有缺套件沒有記錄到，一方面是要部署多台時可以更快更無腦，所以花了一點時間找到了一套Jenkins Plugin叫做 <a href="https://wiki.jenkins-ci.org/display/JENKINS/Swarm+Plugin" target="_blank" rel="external">Swarm</a>。</p><p><a href="https://wiki.jenkins-ci.org/display/JENKINS/Swarm+Plugin" target="_blank" rel="external">Swarm</a>最大特色大概就是可以不用先在Master node身上先進行設定才能增加Slave Node，而是反過來的方式，讓Slave Node可以直接向Master註冊，省去很多設定上的麻煩，非常適合我這懶人。為了方便所以已經直接整合成一個<a href="https://github.com/aminzai/jenkins-swarm-docker.git" target="_blank" rel="external">Github repository</a></p><h1 id="Step"><a href="#Step" class="headerlink" title="Step"></a>Step</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/aminzai/jenkins-swarm-docker.git</span><br><span class="line">$ <span class="built_in">cd</span> jenkins-swarm-docker</span><br><span class="line">$ docker-compose up <span class="_">-d</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://aminzai.net/2016/03/08/Jenkins-swarm-with-docker/" data-id="cill1v6nc0003bi39v7sqh5ki" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jenkins/">jenkins</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/swarm/">swarm</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/03/10/Force-mac-release-dns-cache/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Force mac release dns cache
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/03/08/在Android運行NDK-的Sample/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">在Android運行NDK 的Sample</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Mediatek/" style="font-size: 10px;">Mediatek</a> <a href="/tags/android/" style="font-size: 20px;">android</a> <a href="/tags/bluetooth/" style="font-size: 10px;">bluetooth</a> <a href="/tags/commit-log/" style="font-size: 10px;">commit log</a> <a href="/tags/deploy/" style="font-size: 10px;">deploy</a> <a href="/tags/dns/" style="font-size: 10px;">dns</a> <a href="/tags/docker/" style="font-size: 20px;">docker</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jabra/" style="font-size: 10px;">jabra</a> <a href="/tags/jenkins/" style="font-size: 10px;">jenkins</a> <a href="/tags/linkit7688duo/" style="font-size: 10px;">linkit7688duo</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/merge/" style="font-size: 10px;">merge</a> <a href="/tags/ndk/" style="font-size: 10px;">ndk</a> <a href="/tags/openbox/" style="font-size: 20px;">openbox</a> <a href="/tags/password/" style="font-size: 10px;">password</a> <a href="/tags/ramdisk/" style="font-size: 10px;">ramdisk</a> <a href="/tags/robots-txt/" style="font-size: 10px;">robots.txt</a> <a href="/tags/seo/" style="font-size: 10px;">seo</a> <a href="/tags/svn/" style="font-size: 10px;">svn</a> <a href="/tags/swarm/" style="font-size: 10px;">swarm</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/03/14/Jabra-Rox-Wireless-Openbox/">Jabra Rox Wireless Openbox</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/11/add-deploy-to-github-io/">部屬 Hexo 到 github.io</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/11/add-robots-txt-to-hexo/">幫 Hexo 加入 robots.txt</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/10/有趣的Commit-log網站/">有趣的Commit log網站</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/10/docker-change-user-password/">docker change user password</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Amin Wang<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

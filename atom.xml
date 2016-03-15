@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>民</title>
+  <subtitle>Amin&#39;s notes</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://aminzai.net/"/>
+  <updated>2016-03-15T14:13:44.000Z</updated>
+  <id>http://aminzai.net/</id>
+  
+  <author>
+    <name>Amin Wang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Jabra Rox Wireless Openbox</title>
+    <link href="http://aminzai.net/2016/03/14/Jabra-Rox-Wireless-Openbox/"/>
+    <id>http://aminzai.net/2016/03/14/Jabra-Rox-Wireless-Openbox/</id>
+    <published>2016-03-14T05:12:14.000Z</published>
+    <updated>2016-03-15T14:13:44.000Z</updated>
+    
+    <content type="html">&lt;p&gt;最近開始有跑步的習慣，原先還在用Apple的Earpods，聲音是還ＯＫ不過就是跑步拖條線感覺就是隨時手機會飛奔出去。&lt;br&gt;看了一些堆文章，很多人是推Sony的耳機，我自已有也一隻Sony 7506，個人感覺也是不錯，不過想一想還是很想換牌子，所以後來選了Jabra Rox Wireless。&lt;br&gt;就聲音而言算是對得起他的價格，其他究竟好不好，可能要給我一點時間去試驗了。&lt;br&gt;以下就附上隨手拍的開箱照吧！&lt;br&gt;&lt;div class=&quot;flickr-album&quot; id=&quot;72157665661694031&quot;&gt;&lt;h1 class=&quot;flickr-album-title&quot;&gt;2016-03-12-Jabra_Rox_Wireless&lt;/h1&gt;&lt;img class=&quot;flickr-gallery-photo&quot; src=&quot;https://farm2.staticflickr.com/1446/25724921395_24b64e0875_b.jpg&quot;&gt;&lt;img class=&quot;flickr-gallery-photo&quot; src=&quot;https://farm2.staticflickr.com/1541/25698868976_324814bdc3_b.jpg&quot;&gt;&lt;img class=&quot;flickr-gallery-photo&quot; src=&quot;https://farm2.staticflickr.com/1489/25698877906_6a19db90fb_b.jpg&quot;&gt;&lt;img class=&quot;flickr-gallery-photo&quot; src=&quot;https://farm2.staticflickr.com/1710/25098331083_45d1d3ff35_b.jpg&quot;&gt;&lt;img class=&quot;flickr-gallery-photo&quot; src=&quot;https://farm2.staticflickr.com/1568/25098339213_eb82937419_b.jpg&quot;&gt;&lt;img class=&quot;flickr-gallery-photo&quot; src=&quot;https://farm2.staticflickr.com/1540/25603934222_4888b8d74b_b.jpg&quot;&gt;&lt;img class=&quot;flickr-gallery-photo&quot; src=&quot;https://farm2.staticflickr.com/1716/25629902551_992c809c62_b.jpg&quot;&gt;&lt;img class=&quot;flickr-gallery-photo&quot; src=&quot;https://farm2.staticflickr.com/1644/25094551894_c53a6ec200_b.jpg&quot;&gt;&lt;img class=&quot;flickr-gallery-photo&quot; src=&quot;https://farm2.staticflickr.com/1635/25629915851_bc5d41ecdf_b.jpg&quot;&gt;&lt;img class=&quot;flickr-gallery-photo&quot; src=&quot;https://farm2.staticflickr.com/1710/25603958282_045f84701d_b.jpg&quot;&gt;&lt;img class=&quot;flickr-gallery-photo&quot; src=&quot;https://farm2.staticflickr.com/1518/25098375213_349c7a2bab_b.jpg&quot;&gt;&lt;img class=&quot;flickr-gallery-photo&quot; src=&quot;https://farm2.staticflickr.com/1561/25424267920_f0a1a79026_b.jpg&quot;&gt;&lt;img class=&quot;flickr-gallery-photo&quot; src=&quot;https://farm2.staticflickr.com/1664/25424275750_55d7ab0b06_b.jpg&quot;&gt;&lt;img class=&quot;flickr-gallery-photo&quot; src=&quot;https://farm2.staticflickr.com/1567/25725007255_0677e18c90_b.jpg&quot;&gt;&lt;/div&gt;&lt;/p&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近開始有跑步的習慣，原先還在用Apple的Earpods，聲音是還ＯＫ不過就是跑步拖條線感覺就是隨時手機會飛奔出去。&lt;br&gt;看了一些堆文章，很多人是推Sony的耳機，我自已有也一隻Sony 7506，個人感覺也是不錯，不過想一想還是很想換牌子，所以後來選了Jabra Ro
+    
+    </summary>
+    
+    
+      <category term="openbox" scheme="http://aminzai.net/tags/openbox/"/>
+    
+      <category term="jabra" scheme="http://aminzai.net/tags/jabra/"/>
+    
+      <category term="bluetooth" scheme="http://aminzai.net/tags/bluetooth/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>部屬 Hexo 到 github.io</title>
+    <link href="http://aminzai.net/2016/03/11/add-deploy-to-github-io/"/>
+    <id>http://aminzai.net/2016/03/11/add-deploy-to-github-io/</id>
+    <published>2016-03-11T14:40:39.000Z</published>
+    <updated>2016-03-12T13:13:57.000Z</updated>
+    
+    <content type="html">&lt;p&gt;在以前寫靜態網頁都要另外找網頁空間來做hosting，至從Github.io出來以後就可以直接用Github.io進行hosting。&lt;br&gt;Hexo好處是可以直接部屬編譯完後的static檔案直接傳至github上，不用把整個Hexo都上傳至github上。&lt;/p&gt;&lt;h2 id=&quot;先申請github-io&quot;&gt;&lt;a href=&quot;#先申請github-io&quot; class=&quot;headerlink&quot; title=&quot;先申請github.io&quot;&gt;&lt;/a&gt;先申請github.io&lt;/h2&gt;&lt;p&gt;申請網址：&lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://pages.github.com/&lt;/a&gt;&lt;/p&gt;&lt;h2 id=&quot;安裝hexo-plugin&quot;&gt;&lt;a href=&quot;#安裝hexo-plugin&quot; class=&quot;headerlink&quot; title=&quot;安裝hexo plugin&quot;&gt;&lt;/a&gt;安裝hexo plugin&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&quot;加入部屬設定到-config-yml上&quot;&gt;&lt;a href=&quot;#加入部屬設定到-config-yml上&quot; class=&quot;headerlink&quot; title=&quot;加入部屬設定到_config.yml上&quot;&gt;&lt;/a&gt;加入部屬設定到&lt;code&gt;_config.yml&lt;/code&gt;上&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;: git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    repo: &amp;lt;repository url&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    branch: [branch]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    message: [message]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;參數&lt;/th&gt;&lt;th&gt;敘述&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;repo&lt;/td&gt;&lt;td&gt;（必要）github.io的repo位置&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;branch&lt;/td&gt;&lt;td&gt;（選項）要上傳的branch&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;message&lt;/td&gt;&lt;td&gt;（選項）上傳後的commit訊息 預設：Site updated: YYYY-MM-DD HH:mm:ss&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2 id=&quot;編譯並部屬檔案到&quot;&gt;&lt;a href=&quot;#編譯並部屬檔案到&quot; class=&quot;headerlink&quot; title=&quot;編譯並部屬檔案到&quot;&gt;&lt;/a&gt;編譯並部屬檔案到&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在以前寫靜態網頁都要另外找網頁空間來做hosting，至從Github.io出來以後就可以直接用Github.io進行hosting。&lt;br&gt;Hexo好處是可以直接部屬編譯完後的static檔案直接傳至github上，不用把整個Hexo都上傳至github上。&lt;/p&gt;&lt;h2
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://aminzai.net/tags/hexo/"/>
+    
+      <category term="github" scheme="http://aminzai.net/tags/github/"/>
+    
+      <category term="deploy" scheme="http://aminzai.net/tags/deploy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>幫 Hexo 加入 robots.txt</title>
+    <link href="http://aminzai.net/2016/03/11/add-robots-txt-to-hexo/"/>
+    <id>http://aminzai.net/2016/03/11/add-robots-txt-to-hexo/</id>
+    <published>2016-03-11T14:19:01.000Z</published>
+    <updated>2016-03-12T13:13:57.000Z</updated>
+    
+    <content type="html">&lt;p&gt;最近開始研究&lt;a href=&quot;https://hexo.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;這個Blog，剛好研究到如何自動加入robots.txt給爬蟲去讀取，所以就順手寫下來記錄一下。&lt;br&gt;找了一下，我選了&lt;a href=&quot;https://github.com/leecrossley/hexo-generator-robotstxt&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo-generator-robotstxt&lt;/a&gt;這到當我的robots.txt的generator&lt;/p&gt;&lt;p&gt;安裝：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-generator-robotstxt --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;加入設定到 &lt;code&gt;_config.yml&lt;/code&gt;的 &lt;code&gt;plugins&lt;/code&gt;底下&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;plugins&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; hexo-generator-robotstxt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;加入&lt;code&gt;robots.txt&lt;/code&gt;的設定&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;robotstxt:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    useragent: &lt;span class=&quot;string&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    disallow:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        - /one_file_to_disallow.html&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        - /2nd_file_to_disallow.html&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        - /3rd_file_to_disallow.html&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    allow:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        - /one_file_to_allow.html&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        - /2nd_file_to_allow.html&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        - /3rd_file_to_allow.html&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    sitemap: /sitemap.xml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;以下是我這段的設定&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;robotstxt:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  useragent: &lt;span class=&quot;string&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  disallow:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - /vendors/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - /js/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - /css/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - /fonts/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - /vendors/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - /fancybox/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  allow:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - /&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - /archives/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  sitemap: /sitemap.xml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;以下是一些參數的相關解說&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;參數&lt;/th&gt;&lt;th&gt;敘述&lt;/th&gt;&lt;th&gt;預設值&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;useragent&lt;/td&gt;&lt;td&gt;Set the User-Agent&lt;/td&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;disallow&lt;/td&gt;&lt;td&gt;Disallow files or folders for this User-Agent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;allow&lt;/td&gt;&lt;td&gt;Allow files or folders for this User-Agent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sitemap&lt;/td&gt;&lt;td&gt;Set the path to your sitemap&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近開始研究&lt;a href=&quot;https://hexo.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;這個Blog，剛好研究到如何自動加入robots.txt給爬蟲去讀取，所以就順手寫下來記錄一下。&lt;br&gt;找了一下，我選了&lt;a hre
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://aminzai.net/tags/Hexo/"/>
+    
+      <category term="robots.txt" scheme="http://aminzai.net/tags/robots-txt/"/>
+    
+      <category term="seo" scheme="http://aminzai.net/tags/seo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>有趣的Commit log網站</title>
+    <link href="http://aminzai.net/2016/03/10/%E6%9C%89%E8%B6%A3%E7%9A%84Commit-log%E7%B6%B2%E7%AB%99/"/>
+    <id>http://aminzai.net/2016/03/10/有趣的Commit-log網站/</id>
+    <published>2016-03-10T06:00:04.000Z</published>
+    <updated>2016-03-12T13:13:57.000Z</updated>
+    
+    <content type="html">&lt;p&gt;今天朋友傳來一個有趣的網站，&lt;a href=&quot;http://www.commitlogsfromlastnight.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Commit Log From Last Night&lt;/a&gt; 可以看出這些 Heackers壓力都蠻大的XD&lt;/p&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天朋友傳來一個有趣的網站，&lt;a href=&quot;http://www.commitlogsfromlastnight.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Commit Log From Last Night&lt;/a&gt; 可以看出這些 Heac
+    
+    </summary>
+    
+    
+      <category term="commit log" scheme="http://aminzai.net/tags/commit-log/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>docker change user password</title>
+    <link href="http://aminzai.net/2016/03/10/docker-change-user-password/"/>
+    <id>http://aminzai.net/2016/03/10/docker-change-user-password/</id>
+    <published>2016-03-09T16:21:53.000Z</published>
+    <updated>2016-03-09T16:28:05.000Z</updated>
+    
+    <content type="html">&lt;p&gt;前一陣子為了幫Docker加入ssh環境，所以加入了ssh daemon進入系統，不過問題來了，ssh就會需要密碼（自己先gen也是可以），所以必須事先先把密碼設定起來了。&lt;br&gt;在網路上是有找兩種寫法，一個是使用salt的方式直接在建立使用者的時候加入，我是選擇比較偷懶的方式（目前試出來算是穩定的方法）&lt;/p&gt;&lt;p&gt;以下是寫在Dockerfile的寫法&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;RUN &lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;&amp;lt;username&amp;gt;:&amp;lt;password&amp;gt;&quot;&lt;/span&gt; | chpasswd&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;Example:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;RUN &lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;root:Docker!&quot;&lt;/span&gt; | chpasswd&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;前一陣子為了幫Docker加入ssh環境，所以加入了ssh daemon進入系統，不過問題來了，ssh就會需要密碼（自己先gen也是可以），所以必須事先先把密碼設定起來了。&lt;br&gt;在網路上是有找兩種寫法，一個是使用salt的方式直接在建立使用者的時候加入，我是選擇比較偷懶的
+    
+    </summary>
+    
+    
+      <category term="docker" scheme="http://aminzai.net/tags/docker/"/>
+    
+      <category term="password" scheme="http://aminzai.net/tags/password/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Force mac release dns cache</title>
+    <link href="http://aminzai.net/2016/03/10/Force-mac-release-dns-cache/"/>
+    <id>http://aminzai.net/2016/03/10/Force-mac-release-dns-cache/</id>
+    <published>2016-03-09T16:19:35.000Z</published>
+    <updated>2016-03-09T16:20:09.000Z</updated>
+    
+    <content type="html">&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo killall -HUP mDNSResponder&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span clas
+    
+    </summary>
+    
+    
+      <category term="mac" scheme="http://aminzai.net/tags/mac/"/>
+    
+      <category term="dns" scheme="http://aminzai.net/tags/dns/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jenkins swarm with docker</title>
+    <link href="http://aminzai.net/2016/03/08/Jenkins-swarm-with-docker/"/>
+    <id>http://aminzai.net/2016/03/08/Jenkins-swarm-with-docker/</id>
+    <published>2016-03-08T15:32:43.000Z</published>
+    <updated>2016-03-08T15:34:58.000Z</updated>
+    
+    <content type="html">&lt;p&gt;因為某些原因所以前一陣子弄了一套Jenkins，不過為了部署方便，光靠原本的Jenkins自己的部署slave的方式實在不是合我用，所以就在想如何跟Docker整合在一起，一方面也是環境單純可以避面Slave Node上有缺套件沒有記錄到，一方面是要部署多台時可以更快更無腦，所以花了一點時間找到了一套Jenkins Plugin叫做 &lt;a href=&quot;https://wiki.jenkins-ci.org/display/JENKINS/Swarm+Plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Swarm&lt;/a&gt;。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://wiki.jenkins-ci.org/display/JENKINS/Swarm+Plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Swarm&lt;/a&gt;最大特色大概就是可以不用先在Master node身上先進行設定才能增加Slave Node，而是反過來的方式，讓Slave Node可以直接向Master註冊，省去很多設定上的麻煩，非常適合我這懶人。為了方便所以已經直接整合成一個&lt;a href=&quot;https://github.com/aminzai/jenkins-swarm-docker.git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github repository&lt;/a&gt;&lt;/p&gt;&lt;h1 id=&quot;Step&quot;&gt;&lt;a href=&quot;#Step&quot; class=&quot;headerlink&quot; title=&quot;Step&quot;&gt;&lt;/a&gt;Step&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; https://github.com/aminzai/jenkins-swarm-docker.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ &lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; jenkins-swarm-docker&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ docker-compose up &lt;span class=&quot;_&quot;&gt;-d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;因為某些原因所以前一陣子弄了一套Jenkins，不過為了部署方便，光靠原本的Jenkins自己的部署slave的方式實在不是合我用，所以就在想如何跟Docker整合在一起，一方面也是環境單純可以避面Slave Node上有缺套件沒有記錄到，一方面是要部署多台時可以更快更無腦
+    
+    </summary>
+    
+    
+      <category term="jenkins" scheme="http://aminzai.net/tags/jenkins/"/>
+    
+      <category term="docker" scheme="http://aminzai.net/tags/docker/"/>
+    
+      <category term="swarm" scheme="http://aminzai.net/tags/swarm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在Android運行NDK 的Sample</title>
+    <link href="http://aminzai.net/2016/03/08/%E5%9C%A8Android%E9%81%8B%E8%A1%8CNDK-%E7%9A%84Sample/"/>
+    <id>http://aminzai.net/2016/03/08/在Android運行NDK-的Sample/</id>
+    <published>2016-03-08T15:23:06.000Z</published>
+    <updated>2016-03-08T15:30:48.000Z</updated>
+    
+    <content type="html">&lt;p&gt;(在此不解釋如何安裝NDK)&lt;br&gt;運行平台:Archlinux 64&lt;/p&gt;&lt;h1 id=&quot;建立Android-專案檔&quot;&gt;&lt;a href=&quot;#建立Android-專案檔&quot; class=&quot;headerlink&quot; title=&quot;建立Android  專案檔&quot;&gt;&lt;/a&gt;建立Android 專案檔&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ android create project -p ./ -t 3 -k net.aminzai.myjni &lt;span class=&quot;_&quot;&gt;-a&lt;/span&gt; MyJniActivity&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&quot;編輯MyJniActivity&quot;&gt;&lt;a href=&quot;#編輯MyJniActivity&quot; class=&quot;headerlink&quot; title=&quot;編輯MyJniActivity&quot;&gt;&lt;/a&gt;編輯MyJniActivity&lt;/h1&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;package&lt;/span&gt; net.aminzai.myjni;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; android.app.Activity;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; android.os.Bundle;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; android.widget.TextView;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;MyJniActivity&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Activity&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;/** Called when the activity is first created. */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(Bundle savedInstanceState)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;super&lt;/span&gt;.onCreate(savedInstanceState);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        TextView tv = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; TextView(&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        tv.setText(getString());&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        setContentView(tv);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;native&lt;/span&gt; String &lt;span class=&quot;title&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.loadLibrary(&lt;span class=&quot;string&quot;&gt;&quot;net_aminzai_myjni_MyJniActivity&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&quot;編譯java-file&quot;&gt;&lt;a href=&quot;#編譯java-file&quot; class=&quot;headerlink&quot; title=&quot;編譯java file&quot;&gt;&lt;/a&gt;編譯java file&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ ant compile&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&quot;產生所需要的c-header&quot;&gt;&lt;a href=&quot;#產生所需要的c-header&quot; class=&quot;headerlink&quot; title=&quot;產生所需要的c header&quot;&gt;&lt;/a&gt;產生所需要的c header&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ &lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; bin/classes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ javah -jni net.aminzai.myjni.MyJniActivity&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ &lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; (Project-Root)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&quot;建立Android的jni-資料夾&quot;&gt;&lt;a href=&quot;#建立Android的jni-資料夾&quot; class=&quot;headerlink&quot; title=&quot;建立Android的jni 資料夾&quot;&gt;&lt;/a&gt;建立Android的jni 資料夾&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$mkdir&lt;/span&gt; jni&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&quot;將header-file-移至-jni資料夾底下&quot;&gt;&lt;a href=&quot;#將header-file-移至-jni資料夾底下&quot; class=&quot;headerlink&quot; title=&quot;將header file 移至 jni資料夾底下&quot;&gt;&lt;/a&gt;將header file 移至 jni資料夾底下&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ mv bin/classes/net_aminzai_myjni_MyJniActivity.h jni&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;會看到裏面的內容是&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ cat ./jni/net_aminzai_myjni_MyJniActivity.h&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/* DO NOT EDIT THIS FILE - it is machine generated */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/* Header for class net_aminzai_myjni_MyJniActivity */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;ifndef&lt;/span&gt; _Included_net_aminzai_myjni_MyJniActivity&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;define&lt;/span&gt; _Included_net_aminzai_myjni_MyJniActivity&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;ifdef&lt;/span&gt; __cplusplus&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;extern&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;C&quot;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;endif&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/*&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * Class:     net_aminzai_myjni_MyJniActivity&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * Method:    getString&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * Signature: ()Ljava/lang/String;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;JNIEXPORT jstring JNICALL &lt;span class=&quot;title&quot;&gt;Java_net_aminzai_myjni_MyJniActivity_getString&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;params&quot;&gt;(JNIEnv *, jobject)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;ifdef&lt;/span&gt; __cplusplus&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;endif&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;endif&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&quot;建立-c-file&quot;&gt;&lt;a href=&quot;#建立-c-file&quot; class=&quot;headerlink&quot; title=&quot;建立 c file&quot;&gt;&lt;/a&gt;建立 c file&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ vi jni/net_aminzai_myjni_MyJniActivity.c&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;&quot;net_aminzai_myjni_MyJniActivity.h&quot;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/*&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * Class:     net_aminzai_myjni_MyJniActivity&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * Method:    getString&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * Signature: ()Ljava/lang/String;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;JNIEXPORT jstring JNICALL &lt;span class=&quot;title&quot;&gt;Java_net_aminzai_myjni_MyJniActivity_getString&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;params&quot;&gt;(JNIEnv * env, jobject x)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; (*env)-&amp;gt;NewStringUTF(env, &lt;span class=&quot;string&quot;&gt;&quot;Complex string calculated in native code&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&quot;產生編譯用的makefile&quot;&gt;&lt;a href=&quot;#產生編譯用的makefile&quot; class=&quot;headerlink&quot; title=&quot;產生編譯用的makefile&quot;&gt;&lt;/a&gt;產生編譯用的makefile&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$vi&lt;/span&gt; (Project_Root)/Application.mk&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&quot;highlight makefile&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;APP_PROJECT_PATH:=&lt;span class=&quot;variable&quot;&gt;$(call my-dir)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;APP_MODULE :=  net_aminzai_myjni_MyJniActivity&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$vi&lt;/span&gt; (Project_Root)/jni/Android.mk&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&quot;highlight makefile&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;LOCAL_PATH := &lt;span class=&quot;variable&quot;&gt;$(call my-dir)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;include $(CLEAR_VARS)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;LOCAL_MODULE    := net_aminzai_myjni_MyJniActivity&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;LOCAL_SRC_FILES := net_aminzai_myjni_MyJniActivity.c &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;include $(BUILD_SHARED_LIBRARY)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&quot;編譯-c-file&quot;&gt;&lt;a href=&quot;#編譯-c-file&quot; class=&quot;headerlink&quot; title=&quot;編譯 c file&quot;&gt;&lt;/a&gt;編譯 c file&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ ndk-build                                &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Compile thumb  : net_aminzai_myjni_MyJniActivity &amp;lt;= net_aminzai_myjni_MyJniActivity.c&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;SharedLibrary  : libnet_aminzai_myjni_MyJniActivity.so&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Install        : libnet_aminzai_myjni_MyJniActivity.so =&amp;gt; libs/armeabi/libnet_aminzai_myjni_MyJniActivity.so&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;``` &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 編譯&amp;amp;安裝apk&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;``` bash&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ant&lt;/span&gt; install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&quot;運行&quot;&gt;&lt;a href=&quot;#運行&quot; class=&quot;headerlink&quot; title=&quot;運行&quot;&gt;&lt;/a&gt;運行&lt;/h1&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;(在此不解釋如何安裝NDK)&lt;br&gt;運行平台:Archlinux 64&lt;/p&gt;&lt;h1 id=&quot;建立Android-專案檔&quot;&gt;&lt;a href=&quot;#建立Android-專案檔&quot; class=&quot;headerlink&quot; title=&quot;建立Android  專案檔&quot;&gt;&lt;/a&gt;建立An
+    
+    </summary>
+    
+    
+      <category term="android" scheme="http://aminzai.net/tags/android/"/>
+    
+      <category term="ndk" scheme="http://aminzai.net/tags/ndk/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SVN Merge with multi repo</title>
+    <link href="http://aminzai.net/2016/03/08/SVN-Merge-with-multi-repo/"/>
+    <id>http://aminzai.net/2016/03/08/SVN-Merge-with-multi-repo/</id>
+    <published>2016-03-08T15:01:47.000Z</published>
+    <updated>2016-03-08T15:21:29.000Z</updated>
+    
+    <content type="html">&lt;ol&gt;&lt;li&gt;&lt;p&gt;Dump SVN repo form svn source directory&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ svnadmin dump svn_&lt;span class=&quot;built_in&quot;&gt;source&lt;/span&gt;_repo_dir_1 &amp;gt; svn_&lt;span class=&quot;built_in&quot;&gt;source&lt;/span&gt;_1.dump&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ svnadmin dump svn_&lt;span class=&quot;built_in&quot;&gt;source&lt;/span&gt;_repo_dir_2 &amp;gt; svn_&lt;span class=&quot;built_in&quot;&gt;source&lt;/span&gt;_2.dump&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Create a new SVN repo&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ svnadmin create svn_target_repo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Load old SVN repo dump file to new SVN source directory&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ svnadmin load svn_target_repo --parent-dir svn1_dir &amp;lt; svn_&lt;span class=&quot;built_in&quot;&gt;source&lt;/span&gt;_1.dump&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ svnadmin load svn_target_repo --parent-dri svn2_dir &amp;lt; svn_&lt;span class=&quot;built_in&quot;&gt;source&lt;/span&gt;_2.dump&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;&lt;/ol&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;&lt;li&gt;&lt;p&gt;Dump SVN repo form svn source directory&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1
+    
+    </summary>
+    
+    
+      <category term="svn" scheme="http://aminzai.net/tags/svn/"/>
+    
+      <category term="merge" scheme="http://aminzai.net/tags/merge/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Repack Android ramdisk</title>
+    <link href="http://aminzai.net/2016/03/08/Repack-Android-ramdisk/"/>
+    <id>http://aminzai.net/2016/03/08/Repack-Android-ramdisk/</id>
+    <published>2016-03-08T15:00:05.000Z</published>
+    <updated>2016-03-08T15:21:16.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Unpack:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#cat ramdisk.img | gzip -d | cpio -i&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;Pack:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#find . | cpio -o -H newc | gzip &amp;gt; ramdisk.img&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Unpack:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;
+    
+    </summary>
+    
+    
+      <category term="android" scheme="http://aminzai.net/tags/android/"/>
+    
+      <category term="ramdisk" scheme="http://aminzai.net/tags/ramdisk/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Get MediaTek Linkit 7688 Duo</title>
+    <link href="http://aminzai.net/2016/03/08/Get-MediaTek-Linkit-7688-Duo/"/>
+    <id>http://aminzai.net/2016/03/08/Get-MediaTek-Linkit-7688-Duo/</id>
+    <published>2016-03-08T14:54:56.000Z</published>
+    <updated>2016-03-08T15:21:45.000Z</updated>
+    
+    <content type="html">&lt;p&gt;前幾天拿到了MediaTek Linkit 7688 Duo 所以順手拍了幾張照片下來紀念&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://farm2.staticflickr.com/1569/24815277535_565780ddcc_k_d.jpg&quot; alt=&quot;正面&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://farm2.staticflickr.com/1488/24815297565_f2d445f632_k_d.jpg&quot; alt=&quot;背面&quot;&gt;&lt;/p&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;前幾天拿到了MediaTek Linkit 7688 Duo 所以順手拍了幾張照片下來紀念&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://farm2.staticflickr.com/1569/24815277535_565780ddcc_k_d.jpg&quot; alt=&quot;正面
+    
+    </summary>
+    
+    
+      <category term="Mediatek" scheme="http://aminzai.net/tags/Mediatek/"/>
+    
+      <category term="linkit7688duo" scheme="http://aminzai.net/tags/linkit7688duo/"/>
+    
+      <category term="openbox" scheme="http://aminzai.net/tags/openbox/"/>
+    
+  </entry>
+  
+</feed>

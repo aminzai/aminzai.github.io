@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>在Android運行NDK 的Sample | 民</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="(在此不解釋如何安裝NDK)運行平台:Archlinux 64建立Android 專案檔1$ android create project -p ./ -t 3 -k net.aminzai.myjni -a MyJniActivity編輯MyJniActivity12345678910111213141516171819202122232425package net.aminzai.myjni;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在Android運行NDK 的Sample">
+<meta property="og:url" content="http://aminzai.net/2016/03/08/在Android運行NDK-的Sample/index.html">
+<meta property="og:site_name" content="民">
+<meta property="og:description" content="(在此不解釋如何安裝NDK)運行平台:Archlinux 64建立Android 專案檔1$ android create project -p ./ -t 3 -k net.aminzai.myjni -a MyJniActivity編輯MyJniActivity12345678910111213141516171819202122232425package net.aminzai.myjni;">
+<meta property="og:updated_time" content="2016-03-08T15:30:48.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="在Android運行NDK 的Sample">
+<meta name="twitter:description" content="(在此不解釋如何安裝NDK)運行平台:Archlinux 64建立Android 專案檔1$ android create project -p ./ -t 3 -k net.aminzai.myjni -a MyJniActivity編輯MyJniActivity12345678910111213141516171819202122232425package net.aminzai.myjni;">
+<meta name="twitter:creator" content="@lagunwang">
+<link rel="publisher" href="lagunawang@gmail.com">
+<meta property="fb:app_id" content="KMWang">
+  
+    <link rel="alternate" href="/atom.xml" title="民" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-74933518-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">民</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Amin&#39;s notes</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://aminzai.net"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-在Android運行NDK-的Sample" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/08/在Android運行NDK-的Sample/" class="article-date">
+  <time datetime="2016-03-08T15:23:06.000Z" itemprop="datePublished">2016-03-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      在Android運行NDK 的Sample
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>(在此不解釋如何安裝NDK)<br>運行平台:Archlinux 64</p><h1 id="建立Android-專案檔"><a href="#建立Android-專案檔" class="headerlink" title="建立Android  專案檔"></a>建立Android 專案檔</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ android create project -p ./ -t 3 -k net.aminzai.myjni <span class="_">-a</span> MyJniActivity</span><br></pre></td></tr></table></figure><h1 id="編輯MyJniActivity"><a href="#編輯MyJniActivity" class="headerlink" title="編輯MyJniActivity"></a>編輯MyJniActivity</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> net.aminzai.myjni;</span><br><span class="line"><span class="keyword">import</span> android.app.Activity;</span><br><span class="line"><span class="keyword">import</span> android.os.Bundle;</span><br><span class="line"><span class="keyword">import</span> android.widget.TextView;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyJniActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="comment">/** Called when the activity is first created. */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span></span><br><span class="line">    </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        TextView tv = <span class="keyword">new</span> TextView(<span class="keyword">this</span>);</span><br><span class="line">        tv.setText(getString());</span><br><span class="line">        setContentView(tv);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">native</span> String <span class="title">getString</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span>&#123;</span><br><span class="line">        System.loadLibrary(<span class="string">"net_aminzai_myjni_MyJniActivity"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="編譯java-file"><a href="#編譯java-file" class="headerlink" title="編譯java file"></a>編譯java file</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ant compile</span><br></pre></td></tr></table></figure><h2 id="產生所需要的c-header"><a href="#產生所需要的c-header" class="headerlink" title="產生所需要的c header"></a>產生所需要的c header</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> bin/classes</span><br><span class="line">$ javah -jni net.aminzai.myjni.MyJniActivity</span><br><span class="line">$ <span class="built_in">cd</span> (Project-Root)</span><br></pre></td></tr></table></figure><h1 id="建立Android的jni-資料夾"><a href="#建立Android的jni-資料夾" class="headerlink" title="建立Android的jni 資料夾"></a>建立Android的jni 資料夾</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$mkdir</span> jni</span><br></pre></td></tr></table></figure><h1 id="將header-file-移至-jni資料夾底下"><a href="#將header-file-移至-jni資料夾底下" class="headerlink" title="將header file 移至 jni資料夾底下"></a>將header file 移至 jni資料夾底下</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv bin/classes/net_aminzai_myjni_MyJniActivity.h jni</span><br></pre></td></tr></table></figure><p>會看到裏面的內容是<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat ./jni/net_aminzai_myjni_MyJniActivity.h</span><br></pre></td></tr></table></figure></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* DO NOT EDIT THIS FILE - it is machine generated */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span></span></span><br><span class="line"><span class="comment">/* Header for class net_aminzai_myjni_MyJniActivity */</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> _Included_net_aminzai_myjni_MyJniActivity</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> _Included_net_aminzai_myjni_MyJniActivity</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> __cplusplus</span></span><br><span class="line"><span class="keyword">extern</span> <span class="string">"C"</span> &#123;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"><span class="comment">/*</span><br><span class="line"> * Class:     net_aminzai_myjni_MyJniActivity</span><br><span class="line"> * Method:    getString</span><br><span class="line"> * Signature: ()Ljava/lang/String;</span><br><span class="line"> */</span></span><br><span class="line"><span class="function">JNIEXPORT jstring JNICALL <span class="title">Java_net_aminzai_myjni_MyJniActivity_getString</span></span><br><span class="line">  <span class="params">(JNIEnv *, jobject)</span></span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> __cplusplus</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure><h1 id="建立-c-file"><a href="#建立-c-file" class="headerlink" title="建立 c file"></a>建立 c file</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi jni/net_aminzai_myjni_MyJniActivity.c</span><br></pre></td></tr></table></figure><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="string">"net_aminzai_myjni_MyJniActivity.h"</span></span></span><br><span class="line"><span class="comment">/*</span><br><span class="line"> * Class:     net_aminzai_myjni_MyJniActivity</span><br><span class="line"> * Method:    getString</span><br><span class="line"> * Signature: ()Ljava/lang/String;</span><br><span class="line"> */</span></span><br><span class="line"><span class="function">JNIEXPORT jstring JNICALL <span class="title">Java_net_aminzai_myjni_MyJniActivity_getString</span></span><br><span class="line">  <span class="params">(JNIEnv * env, jobject x)</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> (*env)-&gt;NewStringUTF(env, <span class="string">"Complex string calculated in native code"</span>);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure><h1 id="產生編譯用的makefile"><a href="#產生編譯用的makefile" class="headerlink" title="產生編譯用的makefile"></a>產生編譯用的makefile</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$vi</span> (Project_Root)/Application.mk</span><br></pre></td></tr></table></figure><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">APP_PROJECT_PATH:=<span class="variable">$(call my-dir)</span></span><br><span class="line">APP_MODULE :=  net_aminzai_myjni_MyJniActivity</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$vi</span> (Project_Root)/jni/Android.mk</span><br></pre></td></tr></table></figure><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">LOCAL_PATH := <span class="variable">$(call my-dir)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">include $(CLEAR_VARS)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">LOCAL_MODULE    := net_aminzai_myjni_MyJniActivity</span><br><span class="line">LOCAL_SRC_FILES := net_aminzai_myjni_MyJniActivity.c </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">include $(BUILD_SHARED_LIBRARY)</span><br></pre></td></tr></table></figure><h1 id="編譯-c-file"><a href="#編譯-c-file" class="headerlink" title="編譯 c file"></a>編譯 c file</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ ndk-build                                </span><br><span class="line">Compile thumb  : net_aminzai_myjni_MyJniActivity &lt;= net_aminzai_myjni_MyJniActivity.c</span><br><span class="line">SharedLibrary  : libnet_aminzai_myjni_MyJniActivity.so</span><br><span class="line">Install        : libnet_aminzai_myjni_MyJniActivity.so =&gt; libs/armeabi/libnet_aminzai_myjni_MyJniActivity.so</span><br><span class="line">``` </span><br><span class="line"><span class="comment"># 編譯&amp;安裝apk</span></span><br><span class="line">``` bash</span><br><span class="line"><span class="variable">$ant</span> install</span><br></pre></td></tr></table></figure><h1 id="運行"><a href="#運行" class="headerlink" title="運行"></a>運行</h1>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://aminzai.net/2016/03/08/在Android運行NDK-的Sample/" data-id="cill1v6n30000bi3966flg3d4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ndk/">ndk</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/03/08/Jenkins-swarm-with-docker/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Jenkins swarm with docker
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/03/08/SVN-Merge-with-multi-repo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">SVN Merge with multi repo</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Mediatek/" style="font-size: 10px;">Mediatek</a> <a href="/tags/android/" style="font-size: 20px;">android</a> <a href="/tags/bluetooth/" style="font-size: 10px;">bluetooth</a> <a href="/tags/commit-log/" style="font-size: 10px;">commit log</a> <a href="/tags/deploy/" style="font-size: 10px;">deploy</a> <a href="/tags/dns/" style="font-size: 10px;">dns</a> <a href="/tags/docker/" style="font-size: 20px;">docker</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jabra/" style="font-size: 10px;">jabra</a> <a href="/tags/jenkins/" style="font-size: 10px;">jenkins</a> <a href="/tags/linkit7688duo/" style="font-size: 10px;">linkit7688duo</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/merge/" style="font-size: 10px;">merge</a> <a href="/tags/ndk/" style="font-size: 10px;">ndk</a> <a href="/tags/openbox/" style="font-size: 20px;">openbox</a> <a href="/tags/password/" style="font-size: 10px;">password</a> <a href="/tags/ramdisk/" style="font-size: 10px;">ramdisk</a> <a href="/tags/robots-txt/" style="font-size: 10px;">robots.txt</a> <a href="/tags/seo/" style="font-size: 10px;">seo</a> <a href="/tags/svn/" style="font-size: 10px;">svn</a> <a href="/tags/swarm/" style="font-size: 10px;">swarm</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/03/14/Jabra-Rox-Wireless-Openbox/">Jabra Rox Wireless Openbox</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/11/add-deploy-to-github-io/">部屬 Hexo 到 github.io</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/11/add-robots-txt-to-hexo/">幫 Hexo 加入 robots.txt</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/10/有趣的Commit-log網站/">有趣的Commit log網站</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/10/docker-change-user-password/">docker change user password</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Amin Wang<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
