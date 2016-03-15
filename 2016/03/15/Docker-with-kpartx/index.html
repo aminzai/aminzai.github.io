@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>民</title>
+  <title>Docker with kpartx | 民</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Amin&apos;s life with photography and tech notes">
-<meta property="og:type" content="website">
-<meta property="og:title" content="民">
-<meta property="og:url" content="http://aminzai.net/page/3/index.html">
+  <meta name="description" content="前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。Google找了一下，後來在Openstack的git log發現一個小(patch)[https://review.openstack.org/gitweb?p=openstack%2Fdiskimage-builder.git;a=commitdif">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Docker with kpartx">
+<meta property="og:url" content="http://aminzai.net/2016/03/15/Docker-with-kpartx/index.html">
 <meta property="og:site_name" content="民">
-<meta property="og:description" content="Amin&apos;s life with photography and tech notes">
+<meta property="og:description" content="前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。Google找了一下，後來在Openstack的git log發現一個小(patch)[https://review.openstack.org/gitweb?p=openstack%2Fdiskimage-builder.git;a=commitdif">
+<meta property="og:updated_time" content="2016-03-15T15:37:21.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="民">
-<meta name="twitter:description" content="Amin&apos;s life with photography and tech notes">
+<meta name="twitter:title" content="Docker with kpartx">
+<meta name="twitter:description" content="前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。Google找了一下，後來在Openstack的git log發現一個小(patch)[https://review.openstack.org/gitweb?p=openstack%2Fdiskimage-builder.git;a=commitdif">
 <meta name="twitter:creator" content="@lagunwang">
 <link rel="publisher" href="lagunawang@gmail.com">
 <meta property="fb:app_id" content="KMWang">
@@ -82,12 +83,10 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Repack-Android-ramdisk" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Docker-with-kpartx" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/03/08/Repack-Android-ramdisk/" class="article-date">
-  <time datetime="2016-03-08T15:00:05.000Z" itemprop="datePublished">2016-03-08</time>
+    <a href="/2016/03/15/Docker-with-kpartx/" class="article-date">
+  <time datetime="2016-03-15T15:29:05.000Z" itemprop="datePublished">2016-03-15</time>
 </a>
     
   </div>
@@ -97,8 +96,8 @@ ga('send', 'pageview');
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/08/Repack-Android-ramdisk/">Repack Android ramdisk</a>
+    <h1 class="article-title" itemprop="name">
+      Docker with kpartx
     </h1>
   
 
@@ -106,71 +105,41 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Unpack:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#cat ramdisk.img | gzip -d | cpio -i</span></span><br></pre></td></tr></table></figure></p><p>Pack:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#find . | cpio -o -H newc | gzip &gt; ramdisk.img</span></span><br></pre></td></tr></table></figure></p>
+        <p>前一陣子在解決build code環境時，發現在docker裡面使用kpartx會有問題，主要情況是在docker環境下udev是不可以被使用的。<br>Google找了一下，後來在Openstack的git log發現一個小(patch)[<a href="https://review.openstack.org/gitweb?p=openstack%2Fdiskimage-builder.git;a=commitdiff;h=55f61ca26213dbca4208b5bbdaa2031dbdd7b73c]，跟我目前要解決的問題一樣，所以就拿來解了一下，還真的有用，所以就在此紀錄一下。" target="_blank" rel="external">https://review.openstack.org/gitweb?p=openstack%2Fdiskimage-builder.git;a=commitdiff;h=55f61ca26213dbca4208b5bbdaa2031dbdd7b73c]，跟我目前要解決的問題一樣，所以就拿來解了一下，還真的有用，所以就在此紀錄一下。</a></p><p>在使用kpartx的script加入一個判斷<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># If running inside Docker, make our nodes manually, because udev will not be working.</span></span><br><span class="line"><span class="keyword">if</span> [[ <span class="_">-f</span> /.dockerenv ]]; <span class="keyword">then</span></span><br><span class="line">    sudo dmsetup --noudevsync mknodes</span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure></p><p>在啟動docker的時候加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--privileged=<span class="literal">true</span></span><br></pre></td></tr></table></figure></p><p>或使用docker-compose時在docker-compose.yml加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">privileged: <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://aminzai.net/2016/03/08/Repack-Android-ramdisk/" data-id="ciltl2u7g00030439wv6ed7h2" class="article-share-link">Share</a>
+      <a data-url="http://aminzai.net/2016/03/15/Docker-with-kpartx/" data-id="ciltl2u7u000i0439vqfllu2a" class="article-share-link">Share</a>
       
-        <a href="http://aminzai.net/2016/03/08/Repack-Android-ramdisk/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://aminzai.net/2016/03/15/Docker-with-kpartx/#disqus_thread" class="article-comment-link">Comments</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ramdisk/">ramdisk</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/docker/">docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/kpartx/">kpartx</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/udev/">udev</a></li></ul>
 
 
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Get-MediaTek-Linkit-7688-Duo" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/03/08/Get-MediaTek-Linkit-7688-Duo/" class="article-date">
-  <time datetime="2016-03-08T14:54:56.000Z" itemprop="datePublished">2016-03-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/08/Get-MediaTek-Linkit-7688-Duo/">Get MediaTek Linkit 7688 Duo</a>
-    </h1>
+    <a href="/2016/03/14/Jabra-Rox-Wireless-Openbox/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Jabra Rox Wireless Openbox</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>前幾天拿到了MediaTek Linkit 7688 Duo 所以順手拍了幾張照片下來紀念</p><p><img src="https://farm2.staticflickr.com/1569/24815277535_565780ddcc_k_d.jpg" alt="正面"><br><img src="https://farm2.staticflickr.com/1488/24815297565_f2d445f632_k_d.jpg" alt="背面"></p>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://aminzai.net/2016/03/08/Get-MediaTek-Linkit-7688-Duo/" data-id="ciltl2u750000043991o5o5y6" class="article-share-link">Share</a>
-      
-        <a href="http://aminzai.net/2016/03/08/Get-MediaTek-Linkit-7688-Duo/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mediatek/">Mediatek</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linkit7688duo/">linkit7688duo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/openbox/">openbox</a></li></ul>
-
-
-    </footer>
-  </div>
   
 </article>
 
 
-  
-
-
-  <nav id="page-nav">
-    <a class="extend prev" rel="prev" href="/page/2/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
-  </nav>
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
 </section>
         
           <aside id="sidebar">
@@ -252,11 +221,13 @@ ga('send', 'pageview');
 <script>
   var disqus_shortname = 'aminzai';
   
+  var disqus_url = 'http://aminzai.net/2016/03/15/Docker-with-kpartx/';
+  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>

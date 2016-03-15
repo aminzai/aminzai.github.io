@@ -79,13 +79,6 @@
     </url>
 
     <url>
-        <loc>http://aminzai.net/tags/docker/</loc>
-        <lastmod>2016-03-09T16:28:05.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://aminzai.net/tags/password/</loc>
         <lastmod>2016-03-09T16:28:05.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -158,6 +151,27 @@
     <url>
         <loc>http://aminzai.net/tags/bluetooth/</loc>
         <lastmod>2016-03-15T14:13:44.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://aminzai.net/tags/docker/</loc>
+        <lastmod>2016-03-15T15:37:21.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://aminzai.net/tags/kpartx/</loc>
+        <lastmod>2016-03-15T15:37:21.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://aminzai.net/tags/udev/</loc>
+        <lastmod>2016-03-15T15:37:21.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
