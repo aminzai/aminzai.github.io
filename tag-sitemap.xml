@@ -65,13 +65,6 @@
     </url>
 
     <url>
-        <loc>http://aminzai.net/tags/mac/</loc>
-        <lastmod>2016-03-09T16:20:09.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://aminzai.net/tags/dns/</loc>
         <lastmod>2016-03-09T16:20:09.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -81,6 +74,13 @@
     <url>
         <loc>http://aminzai.net/tags/password/</loc>
         <lastmod>2016-03-09T16:28:05.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://aminzai.net/tags/commit-log/</loc>
+        <lastmod>2016-03-12T13:13:57.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -101,13 +101,6 @@
 
     <url>
         <loc>http://aminzai.net/tags/deploy/</loc>
-        <lastmod>2016-03-12T13:13:57.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://aminzai.net/tags/commit-log/</loc>
         <lastmod>2016-03-12T13:13:57.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -135,14 +128,14 @@
     </url>
 
     <url>
-        <loc>http://aminzai.net/tags/jabra/</loc>
+        <loc>http://aminzai.net/tags/openbox/</loc>
         <lastmod>2016-03-15T14:13:44.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://aminzai.net/tags/openbox/</loc>
+        <loc>http://aminzai.net/tags/jabra/</loc>
         <lastmod>2016-03-15T14:13:44.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -172,6 +165,20 @@
     <url>
         <loc>http://aminzai.net/tags/udev/</loc>
         <lastmod>2016-03-15T15:42:11.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://aminzai.net/tags/mac/</loc>
+        <lastmod>2016-03-20T04:37:27.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://aminzai.net/tags/free-memory/</loc>
+        <lastmod>2016-03-20T04:37:27.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

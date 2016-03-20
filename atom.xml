@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aminzai.net/"/>
-  <updated>2016-03-15T15:42:11.000Z</updated>
+  <updated>2016-03-20T04:37:27.000Z</updated>
   <id>http://aminzai.net/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Free Up Inactive Memory in Mac OS X</title>
+    <link href="http://aminzai.net/2016/03/20/Free-Up-Inactive-Memory-in-Mac-OS-X/"/>
+    <id>http://aminzai.net/2016/03/20/Free-Up-Inactive-Memory-in-Mac-OS-X/</id>
+    <published>2016-03-20T04:35:16.000Z</published>
+    <updated>2016-03-20T04:37:27.000Z</updated>
+    
+    <content type="html">&lt;p&gt;開啟終端機(&lt;code&gt;/Applications/Utilities/&lt;/code&gt;底下會有)，然後輸入：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo purge&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;接者等待完成。&lt;/p&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;開啟終端機(&lt;code&gt;/Applications/Utilities/&lt;/code&gt;底下會有)，然後輸入：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;
+    
+    </summary>
+    
+    
+      <category term="mac" scheme="http://aminzai.net/tags/mac/"/>
+    
+      <category term="free memory" scheme="http://aminzai.net/tags/free-memory/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker with kpartx</title>
@@ -55,9 +77,9 @@
     </summary>
     
     
-      <category term="jabra" scheme="http://aminzai.net/tags/jabra/"/>
-    
       <category term="openbox" scheme="http://aminzai.net/tags/openbox/"/>
+    
+      <category term="jabra" scheme="http://aminzai.net/tags/jabra/"/>
     
       <category term="bluetooth" scheme="http://aminzai.net/tags/bluetooth/"/>
     
@@ -281,11 +303,11 @@
     </summary>
     
     
-      <category term="openbox" scheme="http://aminzai.net/tags/openbox/"/>
-    
       <category term="Mediatek" scheme="http://aminzai.net/tags/Mediatek/"/>
     
       <category term="linkit7688duo" scheme="http://aminzai.net/tags/linkit7688duo/"/>
+    
+      <category term="openbox" scheme="http://aminzai.net/tags/openbox/"/>
     
   </entry>
   
