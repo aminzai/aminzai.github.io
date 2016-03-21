@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: android | 民</title>
+  <title>Reverse tunnel by ssh | 民</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Amin&apos;s life with photography and tech notes">
-<meta property="og:type" content="website">
-<meta property="og:title" content="民">
-<meta property="og:url" content="http://aminzai.net/tags/android/index.html">
+  <meta name="description" content="常常遇到某些情況機器是活在NAT後面，常常要臨時連回來看卻不能看，剛好SSH提供一個功能可以建立簡單的tunnel-N : 不下任何remote command-f : 把ssh丟往背景-R : 建立一個tunnel組合起來就像下面這樣1$ ssh -NfR &amp;lt;remote port&amp;gt;:&amp;lt;bind host&amp;gt;:&amp;lt;bind local port&amp;gt;  &amp;lt;rem">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Reverse tunnel by ssh">
+<meta property="og:url" content="http://aminzai.net/2016/03/21/Reverse-tunnel-by-ssh/index.html">
 <meta property="og:site_name" content="民">
-<meta property="og:description" content="Amin&apos;s life with photography and tech notes">
+<meta property="og:description" content="常常遇到某些情況機器是活在NAT後面，常常要臨時連回來看卻不能看，剛好SSH提供一個功能可以建立簡單的tunnel-N : 不下任何remote command-f : 把ssh丟往背景-R : 建立一個tunnel組合起來就像下面這樣1$ ssh -NfR &amp;lt;remote port&amp;gt;:&amp;lt;bind host&amp;gt;:&amp;lt;bind local port&amp;gt;  &amp;lt;rem">
+<meta property="og:updated_time" content="2016-03-21T13:56:04.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="民">
-<meta name="twitter:description" content="Amin&apos;s life with photography and tech notes">
+<meta name="twitter:title" content="Reverse tunnel by ssh">
+<meta name="twitter:description" content="常常遇到某些情況機器是活在NAT後面，常常要臨時連回來看卻不能看，剛好SSH提供一個功能可以建立簡單的tunnel-N : 不下任何remote command-f : 把ssh丟往背景-R : 建立一個tunnel組合起來就像下面這樣1$ ssh -NfR &amp;lt;remote port&amp;gt;:&amp;lt;bind host&amp;gt;:&amp;lt;bind local port&amp;gt;  &amp;lt;rem">
 <meta name="twitter:creator" content="@lagunwang">
 <link rel="publisher" href="lagunawang@gmail.com">
 <meta property="fb:app_id" content="KMWang">
@@ -82,59 +83,63 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/03/08/在Android運行NDK-的Sample/" class="archive-article-date">
-  <time datetime="2016-03-08T15:23:06.000Z" itemprop="datePublished">Mar 8</time>
+        <section id="main"><article id="post-Reverse-tunnel-by-ssh" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/21/Reverse-tunnel-by-ssh/" class="article-date">
+  <time datetime="2016-03-21T13:46:24.000Z" itemprop="datePublished">2016-03-21</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/03/08/在Android運行NDK-的Sample/">在Android運行NDK 的Sample</a>
+    <h1 class="article-title" itemprop="name">
+      Reverse tunnel by ssh
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/03/08/Repack-Android-ramdisk/" class="archive-article-date">
-  <time datetime="2016-03-08T15:00:05.000Z" itemprop="datePublished">Mar 8</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/03/08/Repack-Android-ramdisk/">Repack Android ramdisk</a>
-    </h1>
-  
+        <p>常常遇到某些情況機器是活在NAT後面，常常要臨時連回來看卻不能看，剛好SSH提供一個功能可以建立簡單的tunnel</p><ul><li>-N : 不下任何remote command</li><li>-f : 把ssh丟往背景</li><li>-R : 建立一個tunnel</li></ul><p>組合起來就像下面這樣<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -NfR &lt;remote port&gt;:&lt;<span class="built_in">bind</span> host&gt;:&lt;<span class="built_in">bind</span> <span class="built_in">local</span> port&gt;  &lt;remote username&gt;@&lt;remote ip&gt;</span><br></pre></td></tr></table></figure></p><p>Example:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -NfR 2222:localhost:22 user@remote.ssh.machine</span><br></pre></td></tr></table></figure></p><p>這時候需要連線時就可以連線remote那台機器上，做對應的連線動作，只是host變成localhost(看bind哪一個host)，然後連上對應的port上就可用了。</p>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://aminzai.net/2016/03/21/Reverse-tunnel-by-ssh/" data-id="cim221l56000izg399x4166m8" class="article-share-link">Share</a>
+      
+        <a href="http://aminzai.net/2016/03/21/Reverse-tunnel-by-ssh/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/revserse-tunnel/">revserse tunnel</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/">ssh</a></li></ul>
 
-    </header>
+
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2016/03/20/Free-Up-Inactive-Memory-in-Mac-OS-X/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Free Up Inactive Memory in Mac OS X</div>
+    </a>
   
+</nav>
 
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
 </section>
         
           <aside id="sidebar">
@@ -216,11 +221,13 @@ ga('send', 'pageview');
 <script>
   var disqus_shortname = 'aminzai';
   
+  var disqus_url = 'http://aminzai.net/2016/03/21/Reverse-tunnel-by-ssh/';
+  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>

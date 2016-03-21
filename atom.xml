@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aminzai.net/"/>
-  <updated>2016-03-20T04:37:27.000Z</updated>
+  <updated>2016-03-21T13:56:04.000Z</updated>
   <id>http://aminzai.net/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Reverse tunnel by ssh</title>
+    <link href="http://aminzai.net/2016/03/21/Reverse-tunnel-by-ssh/"/>
+    <id>http://aminzai.net/2016/03/21/Reverse-tunnel-by-ssh/</id>
+    <published>2016-03-21T13:46:24.000Z</published>
+    <updated>2016-03-21T13:56:04.000Z</updated>
+    
+    <content type="html">&lt;p&gt;常常遇到某些情況機器是活在NAT後面，常常要臨時連回來看卻不能看，剛好SSH提供一個功能可以建立簡單的tunnel&lt;/p&gt;&lt;ul&gt;&lt;li&gt;-N : 不下任何remote command&lt;/li&gt;&lt;li&gt;-f : 把ssh丟往背景&lt;/li&gt;&lt;li&gt;-R : 建立一個tunnel&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;組合起來就像下面這樣&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ ssh -NfR &amp;lt;remote port&amp;gt;:&amp;lt;&lt;span class=&quot;built_in&quot;&gt;bind&lt;/span&gt; host&amp;gt;:&amp;lt;&lt;span class=&quot;built_in&quot;&gt;bind&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;local&lt;/span&gt; port&amp;gt;  &amp;lt;remote username&amp;gt;@&amp;lt;remote ip&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;Example:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ ssh -NfR 2222:localhost:22 user@remote.ssh.machine&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;&lt;p&gt;這時候需要連線時就可以連線remote那台機器上，做對應的連線動作，只是host變成localhost(看bind哪一個host)，然後連上對應的port上就可用了。&lt;/p&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;常常遇到某些情況機器是活在NAT後面，常常要臨時連回來看卻不能看，剛好SSH提供一個功能可以建立簡單的tunnel&lt;/p&gt;&lt;ul&gt;&lt;li&gt;-N : 不下任何remote command&lt;/li&gt;&lt;li&gt;-f : 把ssh丟往背景&lt;/li&gt;&lt;li&gt;-R : 建立一個tunne
+    
+    </summary>
+    
+    
+      <category term="ssh" scheme="http://aminzai.net/tags/ssh/"/>
+    
+      <category term="revserse tunnel" scheme="http://aminzai.net/tags/revserse-tunnel/"/>
+    
+  </entry>
   
   <entry>
     <title>Free Up Inactive Memory in Mac OS X</title>
