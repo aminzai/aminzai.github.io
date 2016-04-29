@@ -84,6 +84,47 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-Docker-for-Mac-Beta-xhyve-小觀察" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/04/29/Docker-for-Mac-Beta-xhyve-小觀察/" class="article-date">
+  <time datetime="2016-04-29T13:28:50.000Z" itemprop="datePublished">2016-04-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/29/Docker-for-Mac-Beta-xhyve-小觀察/">Docker for Mac(Beta)(xhyve)小觀察</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol><li>Base on Mac OSX xhyve (hypervisor)</li><li>Base OS =&gt; Alpine Linux v3.3</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">$ docker info</span><br><span class="line">Containers: 0</span><br><span class="line"> Running: 0</span><br><span class="line"> Paused: 0</span><br><span class="line"> Stopped: 0</span><br><span class="line">Images: 44</span><br><span class="line">Server Version: 1.11.0</span><br><span class="line">Storage Driver: aufs</span><br><span class="line"> Root Dir: /var/lib/docker/aufs</span><br><span class="line"> Backing Filesystem: extfs</span><br><span class="line"> Dirs: 31</span><br><span class="line"> Dirperm1 Supported: true</span><br><span class="line">Logging Driver: json-file</span><br><span class="line">Cgroup Driver: cgroupfs</span><br><span class="line">Plugins:</span><br><span class="line"> Volume: local</span><br><span class="line"> Network: null host bridge</span><br><span class="line">Kernel Version: 4.4.6-moby</span><br><span class="line">Operating System: Alpine Linux v3.3</span><br><span class="line">OSType: linux</span><br><span class="line">Architecture: x86_64</span><br><span class="line">CPUs: 8</span><br><span class="line">Total Memory: 7.79 GiB</span><br><span class="line">Name: docker</span><br><span class="line">ID: *****</span><br><span class="line">Docker Root Dir: /var/lib/docker</span><br><span class="line">Debug mode (client): false</span><br><span class="line">Debug mode (server): true</span><br><span class="line"> File Descriptors: 16</span><br><span class="line"> Goroutines: 42</span><br><span class="line"> System Time: 2016-04-29T13:30:17.098892489Z</span><br><span class="line"> EventsListeners: 1</span><br><span class="line">Registry: https://index.docker.io/v1/</span><br></pre></td></tr></table></figure><ol><li>disk size = 20G</li><li>基於Hybervisor快很多，不過依然不是完全原生</li></ol>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://aminzai.net/2016/04/29/Docker-for-Mac-Beta-xhyve-小觀察/" data-id="cinlrfhcq000fz439y1y2e5yg" class="article-share-link">Share</a>
+      
+        <a href="http://aminzai.net/2016/04/29/Docker-for-Mac-Beta-xhyve-小觀察/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Docker-for-Mac/">Docker for Mac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/xhyve/">xhyve</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Reverse-tunnel-by-ssh" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/03/21/Reverse-tunnel-by-ssh/" class="article-date">
@@ -110,7 +151,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://aminzai.net/2016/03/21/Reverse-tunnel-by-ssh/" data-id="cim221l56000izg399x4166m8" class="article-share-link">Share</a>
+      <a data-url="http://aminzai.net/2016/03/21/Reverse-tunnel-by-ssh/" data-id="cinlrfheh0025z439q49duyjb" class="article-share-link">Share</a>
       
         <a href="http://aminzai.net/2016/03/21/Reverse-tunnel-by-ssh/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -151,7 +192,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://aminzai.net/2016/03/20/Free-Up-Inactive-Memory-in-Mac-OS-X/" data-id="cim221l55000fzg39rjt82yu4" class="article-share-link">Share</a>
+      <a data-url="http://aminzai.net/2016/03/20/Free-Up-Inactive-Memory-in-Mac-OS-X/" data-id="cinlrfhe5001yz43931rq1hto" class="article-share-link">Share</a>
       
         <a href="http://aminzai.net/2016/03/20/Free-Up-Inactive-Memory-in-Mac-OS-X/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -192,7 +233,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://aminzai.net/2016/03/15/Docker-with-kpartx/" data-id="cim221l58000kzg39jdlh0wlo" class="article-share-link">Share</a>
+      <a data-url="http://aminzai.net/2016/03/15/Docker-with-kpartx/" data-id="cinlrfhcr000iz43961xvs9nz" class="article-share-link">Share</a>
       
         <a href="http://aminzai.net/2016/03/15/Docker-with-kpartx/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -233,53 +274,12 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://aminzai.net/2016/03/14/Jabra-Rox-Wireless-Openbox/" data-id="cim221l59000mzg39i02f1fpe" class="article-share-link">Share</a>
+      <a data-url="http://aminzai.net/2016/03/14/Jabra-Rox-Wireless-Openbox/" data-id="cinlrfhcm000az4392sz7rbjo" class="article-share-link">Share</a>
       
         <a href="http://aminzai.net/2016/03/14/Jabra-Rox-Wireless-Openbox/#disqus_thread" class="article-comment-link">Comments</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bluetooth/">bluetooth</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jabra/">jabra</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/openbox/">openbox</a></li></ul>
-
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-add-deploy-to-github-io" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/03/11/add-deploy-to-github-io/" class="article-date">
-  <time datetime="2016-03-11T14:40:39.000Z" itemprop="datePublished">2016-03-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/11/add-deploy-to-github-io/">部屬 Hexo 到 github.io</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在以前寫靜態網頁都要另外找網頁空間來做hosting，至從Github.io出來以後就可以直接用Github.io進行hosting。<br>Hexo好處是可以直接部屬編譯完後的static檔案直接傳至github上，不用把整個Hexo都上傳至github上。</p><h2 id="先申請github-io"><a href="#先申請github-io" class="headerlink" title="先申請github.io"></a>先申請github.io</h2><p>申請網址：<a href="https://pages.github.com/" target="_blank" rel="external">https://pages.github.com/</a></p><h2 id="安裝hexo-plugin"><a href="#安裝hexo-plugin" class="headerlink" title="安裝hexo plugin"></a>安裝hexo plugin</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h2 id="加入部屬設定到-config-yml上"><a href="#加入部屬設定到-config-yml上" class="headerlink" title="加入部屬設定到_config.yml上"></a>加入部屬設定到<code>_config.yml</code>上</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    <span class="built_in">type</span>: git</span><br><span class="line">    repo: &lt;repository url&gt;</span><br><span class="line">    branch: [branch]</span><br><span class="line">    message: [message]</span><br></pre></td></tr></table></figure><table><thead><tr><th>參數</th><th>敘述</th></tr></thead><tbody><tr><td>repo</td><td>（必要）github.io的repo位置</td></tr><tr><td>branch</td><td>（選項）要上傳的branch</td></tr><tr><td>message</td><td>（選項）上傳後的commit訊息 預設：Site updated: YYYY-MM-DD HH:mm:ss</td></tr></tbody></table><h2 id="編譯並部屬檔案到"><a href="#編譯並部屬檔案到" class="headerlink" title="編譯並部屬檔案到"></a>編譯並部屬檔案到</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://aminzai.net/2016/03/11/add-deploy-to-github-io/" data-id="cim221l4y0008zg39ri6vivcc" class="article-share-link">Share</a>
-      
-        <a href="http://aminzai.net/2016/03/11/add-deploy-to-github-io/#disqus_thread" class="article-comment-link">Comments</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/deploy/">deploy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 
 
     </footer>
@@ -305,7 +305,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Mediatek/" style="font-size: 10px;">Mediatek</a> <a href="/tags/android/" style="font-size: 15px;">android</a> <a href="/tags/bluetooth/" style="font-size: 10px;">bluetooth</a> <a href="/tags/commit-log/" style="font-size: 10px;">commit log</a> <a href="/tags/deploy/" style="font-size: 10px;">deploy</a> <a href="/tags/dns/" style="font-size: 10px;">dns</a> <a href="/tags/docker/" style="font-size: 20px;">docker</a> <a href="/tags/free-memory/" style="font-size: 10px;">free memory</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jabra/" style="font-size: 10px;">jabra</a> <a href="/tags/jenkins/" style="font-size: 10px;">jenkins</a> <a href="/tags/kpartx/" style="font-size: 10px;">kpartx</a> <a href="/tags/linkit7688duo/" style="font-size: 10px;">linkit7688duo</a> <a href="/tags/mac/" style="font-size: 15px;">mac</a> <a href="/tags/merge/" style="font-size: 10px;">merge</a> <a href="/tags/ndk/" style="font-size: 10px;">ndk</a> <a href="/tags/openbox/" style="font-size: 15px;">openbox</a> <a href="/tags/password/" style="font-size: 10px;">password</a> <a href="/tags/ramdisk/" style="font-size: 10px;">ramdisk</a> <a href="/tags/revserse-tunnel/" style="font-size: 10px;">revserse tunnel</a> <a href="/tags/robots-txt/" style="font-size: 10px;">robots.txt</a> <a href="/tags/seo/" style="font-size: 10px;">seo</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/svn/" style="font-size: 10px;">svn</a> <a href="/tags/swarm/" style="font-size: 10px;">swarm</a> <a href="/tags/udev/" style="font-size: 10px;">udev</a>
+      <a href="/tags/Docker-for-Mac/" style="font-size: 10px;">Docker for Mac</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Mediatek/" style="font-size: 10px;">Mediatek</a> <a href="/tags/android/" style="font-size: 15px;">android</a> <a href="/tags/bluetooth/" style="font-size: 10px;">bluetooth</a> <a href="/tags/commit-log/" style="font-size: 10px;">commit log</a> <a href="/tags/deploy/" style="font-size: 10px;">deploy</a> <a href="/tags/dns/" style="font-size: 10px;">dns</a> <a href="/tags/docker/" style="font-size: 20px;">docker</a> <a href="/tags/free-memory/" style="font-size: 10px;">free memory</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jabra/" style="font-size: 10px;">jabra</a> <a href="/tags/jenkins/" style="font-size: 10px;">jenkins</a> <a href="/tags/kpartx/" style="font-size: 10px;">kpartx</a> <a href="/tags/linkit7688duo/" style="font-size: 10px;">linkit7688duo</a> <a href="/tags/mac/" style="font-size: 15px;">mac</a> <a href="/tags/merge/" style="font-size: 10px;">merge</a> <a href="/tags/ndk/" style="font-size: 10px;">ndk</a> <a href="/tags/openbox/" style="font-size: 15px;">openbox</a> <a href="/tags/password/" style="font-size: 10px;">password</a> <a href="/tags/ramdisk/" style="font-size: 10px;">ramdisk</a> <a href="/tags/revserse-tunnel/" style="font-size: 10px;">revserse tunnel</a> <a href="/tags/robots-txt/" style="font-size: 10px;">robots.txt</a> <a href="/tags/seo/" style="font-size: 10px;">seo</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/svn/" style="font-size: 10px;">svn</a> <a href="/tags/swarm/" style="font-size: 10px;">swarm</a> <a href="/tags/udev/" style="font-size: 10px;">udev</a> <a href="/tags/xhyve/" style="font-size: 10px;">xhyve</a>
     </div>
   </div>
 
@@ -314,7 +314,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li></ul>
     </div>
   </div>
 
@@ -325,6 +325,10 @@ ga('send', 'pageview');
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/04/29/Docker-for-Mac-Beta-xhyve-小觀察/">Docker for Mac(Beta)(xhyve)小觀察</a>
+          </li>
         
           <li>
             <a href="/2016/03/21/Reverse-tunnel-by-ssh/">Reverse tunnel by ssh</a>
@@ -340,10 +344,6 @@ ga('send', 'pageview');
         
           <li>
             <a href="/2016/03/14/Jabra-Rox-Wireless-Openbox/">Jabra Rox Wireless Openbox</a>
-          </li>
-        
-          <li>
-            <a href="/2016/03/11/add-deploy-to-github-io/">部屬 Hexo 到 github.io</a>
           </li>
         
       </ul>

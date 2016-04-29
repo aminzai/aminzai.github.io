@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aminzai.net/"/>
-  <updated>2016-03-21T13:56:04.000Z</updated>
+  <updated>2016-04-29T13:32:36.000Z</updated>
   <id>http://aminzai.net/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Docker for Mac(Beta)(xhyve)小觀察</title>
+    <link href="http://aminzai.net/2016/04/29/Docker-for-Mac-Beta-xhyve-%E5%B0%8F%E8%A7%80%E5%AF%9F/"/>
+    <id>http://aminzai.net/2016/04/29/Docker-for-Mac-Beta-xhyve-小觀察/</id>
+    <published>2016-04-29T13:28:50.000Z</published>
+    <updated>2016-04-29T13:32:36.000Z</updated>
+    
+    <content type="html">&lt;ol&gt;&lt;li&gt;Base on Mac OSX xhyve (hypervisor)&lt;/li&gt;&lt;li&gt;Base OS =&amp;gt; Alpine Linux v3.3&lt;/li&gt;&lt;/ol&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ docker info&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Containers: 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; Running: 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; Paused: 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; Stopped: 0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Images: 44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Server Version: 1.11.0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Storage Driver: aufs&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; Root Dir: /var/lib/docker/aufs&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; Backing Filesystem: extfs&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; Dirs: 31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; Dirperm1 Supported: true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Logging Driver: json-file&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Cgroup Driver: cgroupfs&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Plugins:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; Volume: local&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; Network: null host bridge&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Kernel Version: 4.4.6-moby&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Operating System: Alpine Linux v3.3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;OSType: linux&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Architecture: x86_64&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CPUs: 8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Total Memory: 7.79 GiB&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Name: docker&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ID: *****&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Docker Root Dir: /var/lib/docker&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Debug mode (client): false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Debug mode (server): true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; File Descriptors: 16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; Goroutines: 42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; System Time: 2016-04-29T13:30:17.098892489Z&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; EventsListeners: 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Registry: https://index.docker.io/v1/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol&gt;&lt;li&gt;disk size = 20G&lt;/li&gt;&lt;li&gt;基於Hybervisor快很多，不過依然不是完全原生&lt;/li&gt;&lt;/ol&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;&lt;li&gt;Base on Mac OSX xhyve (hypervisor)&lt;/li&gt;&lt;li&gt;Base OS =&amp;gt; Alpine Linux v3.3&lt;/li&gt;&lt;/ol&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td c
+    
+    </summary>
+    
+    
+      <category term="Docker for Mac" scheme="http://aminzai.net/tags/Docker-for-Mac/"/>
+    
+      <category term="xhyve" scheme="http://aminzai.net/tags/xhyve/"/>
+    
+  </entry>
   
   <entry>
     <title>Reverse tunnel by ssh</title>
